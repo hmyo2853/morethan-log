@@ -6,7 +6,7 @@ const CONFIG = {
     role: "frontend developer",
     bio: "곧 울창한 나무가 될 프론트엔드 새싹",
     email: "hmyo2853@gmail.com",
-    github: "https://github.com/hmyo2853",
+    github: "hmyo2853",
   },
   projects: [
     {
