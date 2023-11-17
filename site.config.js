@@ -7,6 +7,7 @@ const CONFIG = {
     bio: "곧 울창한 나무가 될 프론트엔드 새싹",
     email: "hmyo2853@gmail.com",
     github: "hmyo2853",
+    linkedin: "가은-이-a82a871aa/",
   },
   projects: [
     {
