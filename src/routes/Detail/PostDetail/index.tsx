@@ -33,7 +33,8 @@ const PostDetail: React.FC<Props> = () => {
         {data.type[0] === "Post" && (
           <>
             <Footer />
-            <CommentBox data={data} />
+            {/** 사용하지 않는 코멘트 박스 주석 처리
+            <CommentBox data={data} /> */}
           </>
         )}
       </article>
