@@ -79,7 +79,7 @@ const StyledWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
 
