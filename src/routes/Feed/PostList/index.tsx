@@ -53,14 +53,7 @@ const PostList: React.FC<Props> = ({ q }) => {
 
   return (
     <StyledWrapper>
-      <div
-        className="my-2"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "1.5rem",
-        }}
-      >
+      <div className="my-2">
         {!filteredPosts.length && (
           <p className="text-gray-500 dark:text-gray-300">Nothing! 😺</p>
         )}
