@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import React, { useEffect, useState } from "react"
 import PostCard from "src/routes/Feed/PostList/PostCard"
+import styled from "@emotion/styled"
 import { DEFAULT_CATEGORY } from "src/constants"
 import usePostsQuery from "src/hooks/usePostsQuery"
 
@@ -51,7 +52,7 @@ const PostList: React.FC<Props> = ({ q }) => {
   }, [q, currentTag, currentCategory, currentOrder, setFilteredPosts])
 
   return (
-    <>
+    <StyledWrapper>
       <div
         className="my-2"
         style={{
@@ -67,8 +68,21 @@ const PostList: React.FC<Props> = ({ q }) => {
           <PostCard key={post.id} data={post} />
         ))}
       </div>
-    </>
+    </StyledWrapper>
   )
 }
 
 export default PostList
+
+const StyledWrapper = styled.div`
+  .my-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    gap: 1.5rem;
+  }
+`
