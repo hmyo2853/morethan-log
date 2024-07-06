@@ -20,14 +20,14 @@ const Feed: React.FC<Props> = () => {
 
   return (
     <StyledWrapper>
-      <div
+      {/* <div
         className="lt"
         css={{
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
         <TagList />
-      </div>
+      </div> */}
       <div className="mid">
         <MobileProfileCard />
         <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
@@ -93,7 +93,7 @@ const StyledWrapper = styled.div`
     grid-column: span 12 / span 12;
 
     @media (min-width: 1024px) {
-      grid-column: span 7 / span 7;
+      grid-column: span 9 / span 9;
     }
 
     > .tags {
