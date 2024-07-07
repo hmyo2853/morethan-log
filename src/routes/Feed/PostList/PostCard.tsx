@@ -64,6 +64,8 @@ export default PostCard
 const StyledWrapper = styled(Link)`
   article {
     height: calc(100% - 2rem);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem;
