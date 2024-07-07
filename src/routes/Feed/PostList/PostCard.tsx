@@ -63,6 +63,9 @@ export default PostCard
 
 const StyledWrapper = styled(Link)`
   article {
+    height: calc(100% - 2rem);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     overflow: hidden;
     position: relative;
     margin-bottom: 1.5rem;
@@ -129,7 +132,6 @@ const StyledWrapper = styled(Link)`
       }
       > .date {
         display: flex;
-        margin-bottom: 1rem;
         gap: 0.5rem;
         align-items: center;
         .content {
@@ -142,10 +144,11 @@ const StyledWrapper = styled(Link)`
         }
       }
       > .summary {
+        font-size: 0.875rem;
         margin-bottom: 1rem;
         p {
           display: none;
-          line-height: 2rem;
+          line-height: 1.5rem;
           color: ${({ theme }) => theme.colors.gray11};
 
           @media (min-width: 768px) {
