@@ -53,6 +53,7 @@ const StyledWrapper = styled.div`
     > .wrapper {
       display: flex;
       gap: 0.5rem;
+      margin-bottom: 0.5rem;
       align-items: center;
       > .wrapper {
         height: fit-content;

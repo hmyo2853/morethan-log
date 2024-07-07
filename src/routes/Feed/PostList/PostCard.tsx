@@ -77,6 +77,7 @@ const StyledWrapper = styled(Link)`
     transition-duration: 300ms;
 
     @media (min-width: 768px) {
+      display: block;
       margin-bottom: 2rem;
     }
 
