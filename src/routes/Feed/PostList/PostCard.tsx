@@ -129,7 +129,6 @@ const StyledWrapper = styled(Link)`
       }
       > .date {
         display: flex;
-        margin-bottom: 1rem;
         gap: 0.5rem;
         align-items: center;
         .content {
@@ -142,6 +141,7 @@ const StyledWrapper = styled(Link)`
         }
       }
       > .summary {
+        font-size: 0.875rem;
         margin-bottom: 1rem;
         p {
           display: none;
